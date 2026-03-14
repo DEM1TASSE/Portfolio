@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F2E6D6;
+  --color-cream-alt: #F7F1E6;
+  --color-espresso: #4A3327;
+  --color-cocoa: #8C5B3C;
+  --color-tan: #B68C6B;
+  --font-serif: var(--font-garamond), Georgia, serif;
+}
+
+body {
+  background-color: #F2E6D6;
+  color: #8C5B3C;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-garamond), Georgia, serif;
+  color: #4A3327;
+}

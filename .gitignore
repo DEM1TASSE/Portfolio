@@ -9,4 +9,9 @@ Gemfile.lock
 
 .DS_Store
 .github/.DS_Store
-.DS_Store
+
+# Next.js
+.next/
+out/
+node_modules/
+npm-debug.log*
