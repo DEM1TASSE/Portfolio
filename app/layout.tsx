@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { EB_Garamond } from 'next/font/google'
+import { Navbar } from '@/components/Navbar'
+import { Footer } from '@/components/Footer'
 import './globals.css'
 
 const garamond = EB_Garamond({
@@ -16,8 +18,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={garamond.variable}>
-      <body className="antialiased" style={{ backgroundColor: '#F2E6D6', color: '#8C5B3C' }}>
-        {children}
+      <body className="antialiased" style={{ backgroundColor: '#F2E6D6', color: '#8C5B3C', minHeight: '100vh' }}>
+        <Navbar />
+        <main className="max-w-4xl mx-auto px-6">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   )
