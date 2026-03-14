@@ -61,7 +61,7 @@ export const experience: ExperienceItem[] = [
     company: 'Microsoft Research Asia',
     position: 'Research Intern',
     date: 'Mar. 2025 - Jul. 2025',
-    logo: 'assets/images/badges/microsoft_logo.png',
+    logo: '/assets/images/badges/microsoft_logo.png',
     brief: 'Exploring efficient and effective LLM reasoning with RLVR',
   },
   {
