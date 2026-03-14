@@ -11,7 +11,7 @@ export default function BlogPage() {
     <div style={{ padding: '8rem 3rem 6rem' }}>
       <p className="section-label">Blog</p>
       {blogs.length === 0 ? (
-        <p style={{ color: '#6b6660', fontSize: '0.9rem' }}>No posts yet.</p>
+        <p style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>No posts yet.</p>
       ) : (
         <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
           {blogs.map((post, i) => (
@@ -19,11 +19,11 @@ export default function BlogPage() {
               key={i}
               style={{
                 display: 'grid', gridTemplateColumns: '120px 1fr', gap: '2rem',
-                padding: '1.2rem 0', borderBottom: '1px solid rgba(237,233,224,0.08)',
+                padding: '1.2rem 0', borderBottom: '1px solid var(--border)',
                 alignItems: 'start',
               }}
             >
-              <span style={{ fontSize: '11px', color: '#6b6660', letterSpacing: '0.05em', fontFamily: 'var(--font-dm-mono)', paddingTop: '2px' }}>
+              <span style={{ fontSize: '11px', color: 'var(--muted)', letterSpacing: '0.05em', fontFamily: 'var(--mono)', paddingTop: '2px' }}>
                 {post.date}
               </span>
               <a

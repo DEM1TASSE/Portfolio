@@ -32,13 +32,13 @@ const researchItems = [
 
 export function Research() {
   return (
-    <section id="research" style={{ padding: '6rem 3rem', borderTop: '1px solid rgba(237,233,224,0.08)' }}>
+    <section id="research" style={{ padding: '6rem 3rem', borderTop: '1px solid var(--border)' }}>
       <p className="section-label">Research</p>
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'rgba(237,233,224,0.08)' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'var(--border)' }}>
         {researchItems.map((item, i) => (
           <div key={i}
             style={{
-              background: '#070705',
+              background: 'var(--bg)',
               padding: '2.5rem',
               gridColumn: item.featured ? '1 / -1' : undefined,
               display: item.featured ? 'grid' : 'block',
@@ -46,27 +46,27 @@ export function Research() {
               gap: item.featured ? '3rem' : undefined,
               alignItems: item.featured ? 'start' : undefined,
             }}
-            onMouseOver={e => (e.currentTarget.style.background = '#0e0e0b')}
-            onMouseOut={e => (e.currentTarget.style.background = '#070705')}
+            onMouseOver={e => (e.currentTarget.style.background = 'var(--bg2)')}
+            onMouseOut={e => (e.currentTarget.style.background = 'var(--bg)')}
           >
             <div>
               <span style={{
                 display: 'inline-block', fontSize: '9px', letterSpacing: '0.15em',
-                textTransform: 'uppercase', background: '#c6f135', color: '#000',
+                textTransform: 'uppercase', background: 'var(--accent)', color: 'var(--bg)',
                 padding: '3px 8px', marginBottom: '1.2rem',
               }}>
                 {item.badge}
               </span>
               <h2 style={{
-                fontFamily: 'var(--font-cormorant)', fontSize: '1.8rem', fontWeight: 300,
-                lineHeight: 1.25, color: '#ede9e0', marginBottom: '1rem',
+                fontFamily: 'var(--serif)', fontSize: '1.8rem', fontWeight: 300,
+                lineHeight: 1.25, color: 'var(--text)', marginBottom: '1rem',
               }}>
                 {item.title}
               </h2>
-              <p style={{ fontSize: '12px', color: '#6b6660', lineHeight: 1.8 }}>{item.desc}</p>
+              <p style={{ fontSize: '12px', color: 'var(--muted)', lineHeight: 1.8 }}>{item.desc}</p>
               <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
                 {item.tags.map(t => (
-                  <span key={t} style={{ fontSize: '10px', letterSpacing: '0.1em', color: '#8aaa23', textTransform: 'uppercase' }}>{t}</span>
+                  <span key={t} style={{ fontSize: '10px', letterSpacing: '0.1em', color: 'var(--accent-dim)', textTransform: 'uppercase' }}>{t}</span>
                 ))}
               </div>
               {Object.keys(item.links).length > 0 && (
@@ -79,10 +79,10 @@ export function Research() {
             </div>
             {item.stat && (
               <div style={{ textAlign: 'right' }}>
-                <div style={{ fontFamily: 'var(--font-cormorant)', fontSize: '4rem', fontWeight: 300, color: '#ede9e0', lineHeight: 1 }}>
+                <div style={{ fontFamily: 'var(--serif)', fontSize: '4rem', fontWeight: 300, color: 'var(--text)', lineHeight: 1 }}>
                   {item.stat.value}
                 </div>
-                <div style={{ fontSize: '10px', color: '#6b6660', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '0.3rem' }}>
+                <div style={{ fontSize: '10px', color: 'var(--muted)', letterSpacing: '0.1em', textTransform: 'uppercase', marginTop: '0.3rem' }}>
                   {item.stat.label}
                 </div>
               </div>

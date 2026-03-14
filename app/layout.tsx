@@ -23,16 +23,16 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: {
-    default: 'Demi Wang',
-    template: '%s | Demi Wang',
-  },
+  title: { default: 'Demi Wang', template: '%s | Demi Wang' },
   description: 'AI researcher at CMU LTI. Building agents that understand the web.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmMono.variable}`}>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `(function(){try{var t=localStorage.getItem('theme');if(t==='light')document.documentElement.classList.add('light');}catch(e){}})();` }} />
+      </head>
       <body className="antialiased">
         <Navbar />
         {children}

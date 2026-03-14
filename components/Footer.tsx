@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer
       style={{
-        borderTop: '1px solid rgba(237,233,224,0.08)',
+        borderTop: '1px solid var(--border)',
         padding: '2rem 3rem',
         display: 'flex',
         justifyContent: 'space-between',
@@ -13,7 +13,7 @@ export function Footer() {
         gap: '1rem',
       }}
     >
-      <span style={{ fontFamily: 'var(--font-cormorant)', fontSize: '1rem', fontWeight: 300, color: '#6b6660' }}>
+      <span style={{ fontFamily: 'var(--serif)', fontSize: '1rem', fontWeight: 300, color: 'var(--muted)' }}>
         Demi Wang · 王若涵
       </span>
       <div className="flex" style={{ gap: '2rem' }}>

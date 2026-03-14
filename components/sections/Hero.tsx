@@ -24,35 +24,35 @@ export function Hero() {
       {/* Main content — bottom-aligned */}
       <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'flex-end', paddingBottom: '2rem' }}>
         <p style={{
-          fontFamily: 'var(--font-dm-mono)', fontSize: '12px', letterSpacing: '0.2em',
-          textTransform: 'uppercase', color: '#c6f135', marginBottom: '0.5rem',
+          fontFamily: 'var(--mono)', fontSize: '12px', letterSpacing: '0.2em',
+          textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.5rem',
           opacity: 0, animation: 'fadeUp 0.8s 0.1s forwards',
         }}>
           Hi, I&apos;m
         </p>
         <h1 style={{
-          fontFamily: 'var(--font-cormorant)', fontWeight: 300,
+          fontFamily: 'var(--serif)', fontWeight: 300,
           fontSize: 'clamp(7rem, 18vw, 16rem)', lineHeight: 0.88,
-          letterSpacing: '-0.02em', color: '#ede9e0',
+          letterSpacing: '-0.02em', color: 'var(--text)',
           opacity: 0, animation: 'fadeUp 0.9s 0.2s forwards',
         }}>
-          De<em style={{ fontStyle: 'italic', color: '#c6f135' }}>mi</em>
+          De<em style={{ fontStyle: 'italic', color: 'var(--accent)' }}>mi</em>
         </h1>
 
         <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: '2.5rem', gap: '2rem', flexWrap: 'wrap' }}>
           <p style={{
-            fontFamily: 'var(--font-cormorant)', fontSize: '1.4rem', fontWeight: 300,
-            color: '#6b6660', letterSpacing: '0.1em',
+            fontFamily: 'var(--serif)', fontSize: '1.4rem', fontWeight: 300,
+            color: 'var(--muted)', letterSpacing: '0.1em',
             opacity: 0, animation: 'fadeUp 0.9s 0.35s forwards',
           }}>
             王若涵
           </p>
           <p style={{
-            maxWidth: '320px', fontSize: '12px', color: '#6b6660',
+            maxWidth: '320px', fontSize: '12px', color: 'var(--muted)',
             lineHeight: 1.8, textAlign: 'right',
             opacity: 0, animation: 'fadeUp 0.9s 0.45s forwards',
           }}>
-            Researching <span style={{ color: '#ede9e0' }}>web agents</span> at CMU LTI.<br />
+            Researching <span style={{ color: 'var(--text)' }}>web agents</span> at CMU LTI.<br />
             Building things that matter.
           </p>
         </div>
@@ -61,7 +61,7 @@ export function Hero() {
       {/* Bottom bar */}
       <div style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        borderTop: '1px solid rgba(237,233,224,0.08)', paddingTop: '1.5rem',
+        borderTop: '1px solid var(--border)', paddingTop: '1.5rem',
         opacity: 0, animation: 'fadeUp 0.9s 0.6s forwards',
       }}>
         <div className="flex" style={{ gap: '1.5rem' }}>

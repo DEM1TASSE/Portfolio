@@ -7,23 +7,23 @@ const buildingItems = [
 
 export function Building() {
   return (
-    <section id="building" style={{ padding: '6rem 3rem', borderTop: '1px solid rgba(237,233,224,0.08)' }}>
+    <section id="building" style={{ padding: '6rem 3rem', borderTop: '1px solid var(--border)' }}>
       <p className="section-label">Building</p>
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         {buildingItems.map((item, i) => (
           <div key={i} className="building-item">
-            <span style={{ fontSize: '11px', color: '#6b6660', letterSpacing: '0.05em', fontFamily: 'var(--font-dm-mono)' }}>
+            <span style={{ fontSize: '11px', color: 'var(--muted)', letterSpacing: '0.05em', fontFamily: 'var(--mono)' }}>
               {item.year}
             </span>
             <div>
-              <h3 style={{ fontFamily: 'var(--font-cormorant)', fontWeight: 300, fontSize: '1.3rem', color: '#ede9e0', marginBottom: '0.2rem' }}>
+              <h3 style={{ fontFamily: 'var(--serif)', fontWeight: 300, fontSize: '1.3rem', color: 'var(--text)', marginBottom: '0.2rem' }}>
                 {item.name}
               </h3>
-              <p style={{ fontSize: '11px', color: '#6b6660' }}>{item.desc}</p>
+              <p style={{ fontSize: '11px', color: 'var(--muted)' }}>{item.desc}</p>
             </div>
             <span className="building-tag" style={{
               fontSize: '9px', letterSpacing: '0.12em', textTransform: 'uppercase',
-              border: '1px solid rgba(237,233,224,0.08)', color: '#6b6660',
+              border: '1px solid var(--border)', color: 'var(--muted)',
               padding: '4px 10px', whiteSpace: 'nowrap',
             }}>
               {item.tag}
