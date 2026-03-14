@@ -92,6 +92,10 @@ export const services: { reviewer: ServiceItem[]; volunteer: ServiceItem[] } = {
   ],
 }
 
+export const aboutMe = {
+  content: `Beyond research and coding, I enjoy exploring new cities, photography, and spending time with cats. I believe in building things that are both technically rigorous and genuinely useful to people.`,
+}
+
 export type BlogPost = { title: string; url: string; date: string }
 
 export const blogs: BlogPost[] = [
