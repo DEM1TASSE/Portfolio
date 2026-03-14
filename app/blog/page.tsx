@@ -1,38 +1,37 @@
 import type { Metadata } from 'next'
-import { SectionHeader } from '@/components/SectionHeader'
 import { blogs } from '@/data/profile'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Writing by Demi Ruohan Wang on AI, research, and life.',
+  description: 'Writing by Demi Wang on AI, research, and life.',
 }
 
 export default function BlogPage() {
   return (
-    <div className="py-16">
-      <SectionHeader title="Blog" />
+    <div style={{ padding: '8rem 3rem 6rem' }}>
+      <p className="section-label">Blog</p>
       {blogs.length === 0 ? (
-        <p style={{ color: '#8C5B3C', fontSize: '0.9rem' }}>No posts yet.</p>
+        <p style={{ color: '#6b6660', fontSize: '0.9rem' }}>No posts yet.</p>
       ) : (
-        <div className="space-y-6">
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 0 }}>
           {blogs.map((post, i) => (
             <div
               key={i}
-              className="flex gap-4 items-baseline pb-5"
-              style={{ borderBottom: '1px solid rgba(182,140,107,0.2)' }}
+              style={{
+                display: 'grid', gridTemplateColumns: '120px 1fr', gap: '2rem',
+                padding: '1.2rem 0', borderBottom: '1px solid rgba(237,233,224,0.08)',
+                alignItems: 'start',
+              }}
             >
-              <span
-                className="shrink-0 font-mono"
-                style={{ color: '#B68C6B', fontSize: '0.8rem', width: '5rem' }}
-              >
+              <span style={{ fontSize: '11px', color: '#6b6660', letterSpacing: '0.05em', fontFamily: 'var(--font-dm-mono)', paddingTop: '2px' }}>
                 {post.date}
               </span>
               <a
                 href={post.url}
                 target="_blank"
                 rel="noreferrer"
-                className="font-serif leading-snug blog-link"
-                style={{ fontSize: '1.15rem' }}
+                className="accent-link"
+                style={{ fontSize: '13px', textTransform: 'none', letterSpacing: 'normal' }}
               >
                 {post.title}
               </a>

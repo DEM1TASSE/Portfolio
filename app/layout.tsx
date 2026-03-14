@@ -1,13 +1,20 @@
 import type { Metadata, Viewport } from 'next'
-import { EB_Garamond } from 'next/font/google'
+import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
 import './globals.css'
 
-const garamond = EB_Garamond({
+const cormorant = Cormorant_Garamond({
   subsets: ['latin'],
-  weight: ['400', '500', '700'],
-  variable: '--font-garamond',
+  weight: ['300', '600'],
+  style: ['normal', 'italic'],
+  variable: '--font-cormorant',
+})
+
+const dmMono = DM_Mono({
+  subsets: ['latin'],
+  weight: ['300', '400'],
+  variable: '--font-dm-mono',
 })
 
 export const viewport: Viewport = {
@@ -17,20 +24,18 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: 'Demi Ruohan Wang',
-    template: '%s | Demi Ruohan Wang',
+    default: 'Demi Wang',
+    template: '%s | Demi Wang',
   },
-  description: "Master's student at CMU LTI, AI researcher and developer.",
+  description: 'AI researcher at CMU LTI. Building agents that understand the web.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={garamond.variable}>
-      <body className="antialiased" style={{ backgroundColor: '#F2E6D6', color: '#8C5B3C', minHeight: '100vh' }}>
+    <html lang="en" className={`${cormorant.variable} ${dmMono.variable}`}>
+      <body className="antialiased">
         <Navbar />
-        <main className="max-w-4xl mx-auto px-6">
-          {children}
-        </main>
+        {children}
         <Footer />
       </body>
     </html>

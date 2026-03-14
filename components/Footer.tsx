@@ -1,8 +1,32 @@
+import { profile } from '@/data/profile'
+
 export function Footer() {
   return (
-    <footer className="mt-24 py-8" style={{ borderTop: '1px solid rgba(182,140,107,0.2)' }}>
-      <div className="max-w-4xl mx-auto px-6 text-center text-sm" style={{ color: '#8C5B3C', opacity: 0.6 }}>
-        © {new Date().getFullYear()} Demi Ruohan Wang
+    <footer
+      style={{
+        borderTop: '1px solid rgba(237,233,224,0.08)',
+        padding: '2rem 3rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+        gap: '1rem',
+      }}
+    >
+      <span style={{ fontFamily: 'var(--font-cormorant)', fontSize: '1rem', fontWeight: 300, color: '#6b6660' }}>
+        Demi Wang · 王若涵
+      </span>
+      <div className="flex" style={{ gap: '2rem' }}>
+        {[
+          { label: 'Email', href: `mailto:${profile.email}` },
+          { label: 'Scholar', href: profile.gscholar },
+          { label: 'GitHub', href: `https://github.com/${profile.github}` },
+          { label: 'X', href: `https://twitter.com/${profile.twitter}` },
+        ].map(({ label, href }) => (
+          <a key={label} href={href} target={href.startsWith('mailto') ? undefined : '_blank'} rel="noreferrer" className="accent-link">
+            {label}
+          </a>
+        ))}
       </div>
     </footer>
   )
