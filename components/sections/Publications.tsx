@@ -1,5 +1,3 @@
-'use client'
-
 import Image from 'next/image'
 import { SectionHeader } from '@/components/SectionHeader'
 import { publications } from '@/data/publications'
@@ -80,9 +78,8 @@ export function Publications() {
                     href={url}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ fontSize: '0.8rem', color: '#B68C6B', textDecoration: 'underline', textUnderlineOffset: '2px' }}
-                    onMouseOver={e => (e.currentTarget.style.color = '#4A3327')}
-                    onMouseOut={e => (e.currentTarget.style.color = '#B68C6B')}
+                    className="pub-link"
+                    style={{ fontSize: '0.8rem' }}
                   >
                     {name}
                   </a>

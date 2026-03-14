@@ -3,7 +3,7 @@ import { SectionHeader } from '@/components/SectionHeader'
 import { blogs } from '@/data/profile'
 
 export const metadata: Metadata = {
-  title: 'Blog — Demi Ruohan Wang',
+  title: 'Blog',
   description: 'Writing by Demi Ruohan Wang on AI, research, and life.',
 }
 

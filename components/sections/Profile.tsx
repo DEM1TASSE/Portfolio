@@ -67,7 +67,7 @@ export function Profile() {
           >
             <Image
               src={profile.portraitUrl}
-              alt={profile.name}
+              alt={`Portrait of ${profile.name}`}
               width={176}
               height={176}
               className="object-cover w-full h-full"

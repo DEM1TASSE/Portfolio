@@ -1,4 +1,3 @@
-'use client'
 import { SectionHeader } from '@/components/SectionHeader'
 import { services } from '@/data/profile'
 
@@ -22,9 +21,8 @@ export function Services() {
                     href={s.url}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ fontSize: '0.875rem', color: '#8C5B3C' }}
-                    onMouseOver={e => (e.currentTarget.style.color = '#B68C6B')}
-                    onMouseOut={e => (e.currentTarget.style.color = '#8C5B3C')}
+                    className="service-link"
+                    style={{ fontSize: '0.875rem' }}
                   >
                     {s.name}
                   </a>
@@ -48,9 +46,8 @@ export function Services() {
                     href={s.url}
                     target="_blank"
                     rel="noreferrer"
-                    style={{ fontSize: '0.875rem', color: '#8C5B3C' }}
-                    onMouseOver={e => (e.currentTarget.style.color = '#B68C6B')}
-                    onMouseOut={e => (e.currentTarget.style.color = '#8C5B3C')}
+                    className="service-link"
+                    style={{ fontSize: '0.875rem' }}
                   >
                     {s.name}
                   </a>

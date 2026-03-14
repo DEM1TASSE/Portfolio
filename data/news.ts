@@ -7,12 +7,12 @@ export const news: NewsItem[] = [
   {
     date: '2025-08-25',
     content:
-      "Excited to start my master's journey at <a href='https://www.cmu.edu/' target='_blank'>Carnegie Mellon University</a>!",
+      "Excited to start my master's journey at <a href='https://www.cmu.edu/' target='_blank' rel='noreferrer'>Carnegie Mellon University</a>!",
   },
   {
     date: '2025-07-28',
     content:
-      'We won 2nd place at <a href="https://www.kimi.com/" target="_blank">Kimi track</a> in <a href="https://adventure-x.org/en" target="_blank">AdventureX 2025</a>!',
+      'We won 2nd place at <a href="https://www.kimi.com/" target="_blank" rel="noreferrer">Kimi track</a> in <a href="https://adventure-x.org/en" target="_blank" rel="noreferrer">AdventureX 2025</a>!',
   },
   {
     date: '2025-02-11',
