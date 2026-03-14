@@ -17,7 +17,7 @@ export function Publications() {
           <div key={i} className="flex gap-5 items-start">
             {pub.cover && (
               <div
-                className="shrink-0 overflow-hidden"
+                className="hidden sm:block shrink-0 overflow-hidden"
                 style={{
                   width: '112px',
                   height: '80px',
