@@ -22,11 +22,11 @@ export function About() {
           Life is a giant playground — I&apos;m here to unlock every ride:
         </p>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
-          {['Snowboard', 'Climb', 'Dance', 'Hip-Hop', 'Poker', 'Puzzles'].map(interest => (
+          {['Snowboard', 'Climb', 'Dance', 'Rave', 'Solo Trip', 'Fashion'].map(interest => (
             <span key={interest} className="hobby-tag">{interest}</span>
           ))}
           <div style={{ width: '100%' }} />
-          {['Writing', 'Cocktails', 'Fashion', 'Rave', 'Solo Travel'].map(interest => (
+          {['Hip-Hop', 'Writing', 'Cocktails', 'Poker', 'Puzzles'].map(interest => (
             <span key={interest} className="hobby-tag">{interest}</span>
           ))}
         </div>

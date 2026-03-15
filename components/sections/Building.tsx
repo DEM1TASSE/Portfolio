@@ -21,8 +21,8 @@ const buildingItems = [
     desc: 'AI-native Desktop Pet for Productivity. 2nd place winner at the AdventureX 2025 Hackathon Kimi Track.',
     tag: 'Hackathon',
     links: {
-      GitHub: 'https://github.com/DEM1TASSE/Miko',
       Demo: 'https://drive.google.com/file/d/1SjDDU3PQ3EVlejGFV0H73DH6EXSCxJe_/view',
+      GitHub: 'https://github.com/DEM1TASSE/Miko',
     },
   },
   {
