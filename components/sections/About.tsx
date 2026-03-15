@@ -25,7 +25,7 @@ export function About() {
           {['Snowboard', 'Climb', 'Dance', 'Rave', 'Solo Trip', 'Fashion'].map(interest => (
             <span key={interest} className="hobby-tag">{interest}</span>
           ))}
-          <div style={{ width: '100%' }} />
+          <div className="hobby-break" style={{ width: '100%' }} />
           {['Hip-Hop', 'Writing', 'Cocktails', 'Poker', 'Puzzles'].map(interest => (
             <span key={interest} className="hobby-tag">{interest}</span>
           ))}

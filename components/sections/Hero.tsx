@@ -72,7 +72,7 @@ export function Hero() {
           ].map(({ label, href }) => (
             <a key={label} href={href} target="_blank" rel="noreferrer" className="accent-link">{label}</a>
           ))}
-          <div style={{ width: '100%' }} />
+          <div className="hero-link-break" />
           {[
             { label: 'GitHub', href: `https://github.com/${profile.github}` },
             { label: 'CV', href: profile.cvUrl },
