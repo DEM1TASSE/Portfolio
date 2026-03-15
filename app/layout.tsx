@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import type { ReactNode } from 'react'
 import { Cormorant_Garamond, DM_Mono } from 'next/font/google'
 import { Navbar } from '@/components/Navbar'
 import { Footer } from '@/components/Footer'
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   description: 'AI researcher at CMU LTI. Building agents that understand the web.',
 }
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmMono.variable}`}>
       <head>
