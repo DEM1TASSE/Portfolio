@@ -5,6 +5,7 @@ export const profile = {
   github: 'DEM1TASSE',
   twitter: 'demisama_',
   linkedin: 'demi-ruohanwang',
+  xiaohongshu: 'https://www.xiaohongshu.com/user/profile/5bf92dd76f880b00017e778e',
   gscholar: 'https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2',
   cvUrl: '/assets/materials/CV_Demi Wang.pdf',
   portraitUrl: '/assets/images/photos/portrait.jpg',

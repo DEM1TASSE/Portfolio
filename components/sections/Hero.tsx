@@ -4,7 +4,7 @@ export function Hero() {
   return (
     <section
       style={{
-        minHeight: '100vh',
+        minHeight: '90vh',
         display: 'grid',
         gridTemplateRows: '1fr auto',
         padding: '0 3rem 3rem',
@@ -26,7 +26,7 @@ export function Hero() {
         <p style={{
           fontFamily: 'var(--mono)', fontSize: '12px', letterSpacing: '0.2em',
           textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '0.5rem',
-          opacity: 0, animation: 'fadeUp 0.8s 0.1s forwards',
+          opacity: 0, animation: 'fadeUp 0.5s 0s forwards',
         }}>
           Hi, I&apos;m
         </p>
@@ -34,26 +34,27 @@ export function Hero() {
           fontFamily: 'var(--serif)', fontWeight: 300,
           fontSize: 'clamp(7rem, 18vw, 16rem)', lineHeight: 0.88,
           letterSpacing: '-0.02em', color: 'var(--text)',
-          opacity: 0, animation: 'fadeUp 0.9s 0.2s forwards',
+          animation: 'revealLR 1.8s 0.4s ease-out both',
+          transform: 'translateZ(0)',
+          willChange: 'clip-path',
         }}>
           De<em style={{ fontStyle: 'italic', color: 'var(--accent)' }}>mi</em>
         </h1>
 
-        <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: '2.5rem', gap: '2rem', flexWrap: 'wrap' }}>
+        <div className="hero-sub" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginTop: '1rem', gap: '2rem', flexWrap: 'wrap' }}>
           <p style={{
             fontFamily: 'var(--serif)', fontSize: '1.4rem', fontWeight: 300,
             color: 'var(--muted)', letterSpacing: '0.1em',
-            opacity: 0, animation: 'fadeUp 0.9s 0.35s forwards',
+            opacity: 0, animation: 'fadeUp 0.7s 0.5s forwards',
           }}>
-            王若涵
+            王若晗
           </p>
           <p style={{
-            maxWidth: '320px', fontSize: '12px', color: 'var(--muted)',
+            maxWidth: '480px', fontSize: '14px', color: 'var(--muted)',
             lineHeight: 1.8, textAlign: 'right',
-            opacity: 0, animation: 'fadeUp 0.9s 0.45s forwards',
+            opacity: 0, animation: 'fadeUp 0.7s 0.65s forwards',
           }}>
-            Researching <span style={{ color: 'var(--text)' }}>web agents</span> at CMU LTI.<br />
-            Building things that matter.
+            Researching <span style={{ color: 'var(--text)' }}>LLMs, Agents & Reasoning</span> at CMU LTI.<br />Building toward the agentic future.
           </p>
         </div>
       </div>
@@ -61,15 +62,17 @@ export function Hero() {
       {/* Bottom bar */}
       <div style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
-        borderTop: '1px solid var(--border)', paddingTop: '1.5rem',
-        opacity: 0, animation: 'fadeUp 0.9s 0.6s forwards',
+        paddingTop: '1.5rem',
+        opacity: 0, animation: 'fadeUp 0.7s 0.8s forwards',
       }}>
         <div className="flex" style={{ gap: '1.5rem' }}>
           {[
-            { label: 'Research', href: '#research' },
+            { label: 'X', href: `https://twitter.com/${profile.twitter}` },
+            { label: 'LinkedIn', href: `https://linkedin.com/in/${profile.linkedin}` },
             { label: 'Scholar', href: profile.gscholar },
             { label: 'GitHub', href: `https://github.com/${profile.github}` },
-            { label: 'X', href: `https://twitter.com/${profile.twitter}` },
+            { label: 'CV', href: profile.cvUrl },
+            { label: '小红书', href: profile.xiaohongshu },
           ].map(({ label, href }) => (
             <a key={label} href={href}
               target={href.startsWith('#') ? undefined : '_blank'}

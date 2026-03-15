@@ -22,7 +22,7 @@ export const news: NewsItem[] = [
   {
     date: '2025-01-06',
     content:
-      "I'm on China's top 1 intellectual game show, <a href=\"https://en.wikipedia.org/wiki/The_Brain_(game_show)\">The Brain Season 12</a>! Check it out on <a href=\"https://www.youtube.com/@zuiqiangdanao2025\">Youtube</a>🙌",
+      "I'm on China's top 1 intellectual game show, <a href=\"https://en.wikipedia.org/wiki/The_Brain_(game_show)\" class=\"news-link\">The Brain Season 12</a>! Check it out on <a href=\"https://www.youtube.com/@zuiqiangdanao2026\" target=\"_blank\" rel=\"noreferrer\" class=\"news-link\">YouTube</a>🙌",
   },
   {
     date: '2024-06-13',
