@@ -3,13 +3,12 @@ import { profile } from '@/data/profile'
 export function Hero() {
   return (
     <section
+      className="hero-section"
       style={{
         minHeight: '90vh',
         display: 'grid',
         gridTemplateRows: '1fr auto',
-        padding: '0 3rem 3rem',
         position: 'relative',
-        overflow: 'hidden',
         borderTop: 'none',
       }}
     >
@@ -60,27 +59,26 @@ export function Hero() {
       </div>
 
       {/* Bottom bar */}
-      <div style={{
+      <div className="hero-bottom" style={{
         display: 'flex', justifyContent: 'space-between', alignItems: 'center',
         paddingTop: '1.5rem',
         opacity: 0, animation: 'fadeUp 0.7s 0.8s forwards',
       }}>
-        <div className="flex" style={{ gap: '1.5rem' }}>
+        <div className="hero-links flex" style={{ gap: '1.5rem' }}>
           {[
             { label: 'X', href: `https://twitter.com/${profile.twitter}` },
             { label: 'LinkedIn', href: `https://linkedin.com/in/${profile.linkedin}` },
             { label: 'Scholar', href: profile.gscholar },
+          ].map(({ label, href }) => (
+            <a key={label} href={href} target="_blank" rel="noreferrer" className="accent-link">{label}</a>
+          ))}
+          <div style={{ width: '100%' }} />
+          {[
             { label: 'GitHub', href: `https://github.com/${profile.github}` },
             { label: 'CV', href: profile.cvUrl },
             { label: '小红书', href: profile.xiaohongshu },
           ].map(({ label, href }) => (
-            <a key={label} href={href}
-              target={href.startsWith('#') ? undefined : '_blank'}
-              rel={href.startsWith('#') ? undefined : 'noreferrer'}
-              className="accent-link"
-            >
-              {label}
-            </a>
+            <a key={label} href={href} target="_blank" rel="noreferrer" className="accent-link">{label}</a>
           ))}
         </div>
         <div className="scroll-hint">Scroll</div>
