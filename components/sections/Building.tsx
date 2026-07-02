@@ -43,7 +43,7 @@ export function Building() {
               {item.year}
             </span>
             <div>
-              <h3 style={{ fontFamily: 'var(--serif)', fontWeight: 500, fontSize: '1.7rem', color: 'var(--text)', marginBottom: '0.3rem' }}>
+              <h3 style={{ fontFamily: 'var(--serif)', fontWeight: 'var(--serif-weight-title)' as unknown as number, fontSize: '1.7rem', color: 'var(--text)', marginBottom: '0.3rem' }}>
                 {item.url ? (
                   <a href={item.url} target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none', borderBottom: '1px solid transparent', transition: 'border-color 0.2s' }}
                     onMouseOver={e => ((e.currentTarget as HTMLAnchorElement).style.borderColor = 'var(--muted)')}

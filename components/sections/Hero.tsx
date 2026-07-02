@@ -30,7 +30,7 @@ export function Hero() {
           Hi, I&apos;m
         </p>
         <h1 style={{
-          fontFamily: 'var(--serif)', fontWeight: 300,
+          fontFamily: 'var(--serif)', fontWeight: 'var(--serif-weight)' as unknown as number,
           fontSize: 'clamp(7rem, 18vw, 16rem)', lineHeight: 0.88,
           letterSpacing: '-0.02em', color: 'var(--text)',
           animation: 'revealLR 1.8s 0.4s ease-out both',
@@ -42,7 +42,7 @@ export function Hero() {
 
         <div className="hero-sub" style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginTop: '1rem', gap: '2rem', flexWrap: 'wrap' }}>
           <p style={{
-            fontFamily: 'var(--serif)', fontSize: '1.4rem', fontWeight: 300,
+            fontFamily: 'var(--serif)', fontSize: '1.4rem', fontWeight: 'var(--serif-weight)' as unknown as number,
             color: 'var(--muted)', letterSpacing: '0.1em',
             opacity: 0, animation: 'fadeUp 0.7s 0.5s forwards',
           }}>

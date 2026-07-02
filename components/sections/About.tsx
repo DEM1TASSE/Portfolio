@@ -9,14 +9,14 @@ export function About() {
     }}>
       <h2 style={{
         fontFamily: 'var(--serif)', fontSize: 'clamp(2.4rem, 4.5vw, 4rem)',
-        fontWeight: 300, lineHeight: 1.12, fontStyle: 'italic', color: 'var(--text)',
+        fontWeight: 'var(--serif-weight-title)' as unknown as number, lineHeight: 1.12, fontStyle: 'italic', color: 'var(--text)',
         marginTop: '-1.5rem',
       }}>
         Researcher.<br />Builder.<br /><span style={{ color: 'var(--accent)', fontStyle: 'normal' }}>Explorer.</span>
       </h2>
       <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <p style={{
-          fontFamily: 'var(--serif)', fontSize: '1.6rem', fontWeight: 300,
+          fontFamily: 'var(--serif)', fontSize: '1.6rem', fontWeight: 'var(--serif-weight-title)' as unknown as number,
           color: 'var(--text)', lineHeight: 1.5, fontStyle: 'italic',
         }}>
           Life is a giant playground — I&apos;m here to unlock every ride:

@@ -11,6 +11,8 @@
   --border: rgba(237,233,224,0.18);
   --serif: 'Cormorant Garamond', Georgia, serif;
   --mono: 'DM Mono', monospace;
+  --serif-weight: 300;
+  --serif-weight-title: 500;
 }
 
 /* ---- LIGHT THEME ---- */
@@ -22,6 +24,8 @@
   --accent: #5c7a40;
   --accent-dim: #7a9e58;
   --border: rgba(52,69,36,0.12);
+  --serif-weight: 400;
+  --serif-weight-title: 600;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -76,15 +80,17 @@ body {
 .accent-link {
   color: var(--muted);
   text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   border-bottom: 1px solid transparent;
   padding-bottom: 2px;
   transition: color 0.2s, border-color 0.2s;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
   white-space: nowrap;
 }
-.accent-link:hover { color: var(--accent); border-color: var(--accent); }
+.accent-link:hover { color: var(--accent); border-bottom-color: var(--accent); }
+:root.light #research .accent-link { border: 1px solid var(--muted); padding: 3px 10px; padding-bottom: 3px; }
+:root.light #research .accent-link:hover { border-color: var(--accent); border-bottom-color: var(--accent); }
 
 .scroll-hint {
   font-size: 14px;
