@@ -3,6 +3,19 @@
 const researchItems = [
   {
     featured: false,
+    badge: 'MSRA · NeurIPS 2026',
+    title: 'Understanding RL Updates for LLM Reasoning',
+    desc: 'Exploring efficient and effective reinforcement learning for LLM reasoning with verifiable rewards. We analyze what drives RLVR updates under different off-policy settings and propose Adaptive Clip Policy Optimization (ACPO), an adaptive clipping method that improves reasoning performance across benchmarks and model scales.',
+    tags: ['RLVR', 'GRPO', 'LLM', 'Reasoning'],
+    links: {
+      Paper: 'https://arxiv.org/abs/2606.22570',
+      Code: 'https://github.com/Control-derek/ACPO',
+    },
+    status: undefined,
+    stats: [],
+  },
+  {
+    featured: false,
     badge: 'CAIS 2026 · Agent Skills Workshop',
     title: 'Skill Induction for Code Agents on Web Automation',
     desc: 'Exploring code-native skill induction on web agents, where skills take the form of standalone Playwright functions. Building a multi-agent pipeline that decouples solving, verification, and updating — reaching 67.2% on WebArena-Verified, a 6.4 pp improvement over the no-skill code agent baseline and 10.3 pp above programmatic skill + action-based agent.',
@@ -28,19 +41,6 @@ const researchItems = [
       { value: '200K+', label: 'Hugging Face Downloads' },
       { value: '200+', label: 'Citations' },
     ],
-  },
-  {
-    featured: false,
-    badge: 'MSRA · 2025 · Under Submission',
-    title: 'Understanding RL Updates for LLM Reasoning',
-    desc: 'Exploring efficient and effective reinforcement learning for LLM reasoning with verifiable rewards. We analyze what drives RLVR updates under different off-policy settings and propose Adaptive Clip Policy Optimization (ACPO), an adaptive clipping method that improves reasoning performance across benchmarks and model scales.',
-    tags: ['RLVR', 'GRPO', 'LLM', 'Reasoning'],
-    links: {
-      Paper: 'https://arxiv.org/abs/2606.22570',
-      Code: 'https://github.com/Control-derek/ACPO',
-    },
-    status: undefined,
-    stats: [],
   },
   {
     featured: false,

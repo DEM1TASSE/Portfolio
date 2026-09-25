@@ -5,6 +5,11 @@ export type NewsItem = {
 
 export const news: NewsItem[] = [
   {
+    date: '2026-09-24',
+    content:
+      '<a href="https://arxiv.org/abs/2606.22570" target="_blank" rel="noreferrer" class="news-link">ACPO</a> was accepted to NeurIPS 2026!',
+  },
+  {
     date: '2026-06-01',
     content:
       "Starting my internship at <a href='https://www.microsoft.com/en-us/research/' target='_blank' rel='noreferrer' class='news-link'>Microsoft Research</a> in Redmond!",

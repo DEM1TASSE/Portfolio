@@ -7,7 +7,7 @@ export const profile = {
   linkedin: 'demi-ruohanwang',
   xiaohongshu: 'https://www.xiaohongshu.com/user/profile/5bf92dd76f880b00017e778e',
   gscholar: 'https://scholar.google.com/citations?user=Lz9tCVsAAAAJ&hl=zh-CN&authuser=2',
-  cvUrl: '/assets/materials/CV_Demi Wang.pdf',
+  cvUrl: '/assets/materials/demi-cv-2026-09.pdf',
   portraitUrl: '/assets/images/photos/portrait.jpg',
   bio: `Hi there! I'm Demi Ruohan Wang, a Master's student at Carnegie Mellon University's Language Technologies Institute.
 
